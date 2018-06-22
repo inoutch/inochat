@@ -1,0 +1,18 @@
+schema {
+    query: Query
+    mutation: Mutation
+}
+
+type Query {
+    version: String!
+    findAllChatRooms: [ChatRoom]!
+    getChatRoom(id: Int!): ChatRoom
+    getUser(token: String!): User
+}
+
+type Mutation {
+    newUser(username: String!, password: String!): User!
+    newChatRoom(token: String!, name: String!): ChatRoom!
+    newChat(token: String!, chatRoomId: Int!, message: String!): Chat!
+    removeChatRoom(token: String!, chatRoomId: Int!): Boolean
+}

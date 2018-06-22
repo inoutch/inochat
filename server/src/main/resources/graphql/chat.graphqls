@@ -1,0 +1,5 @@
+type Chat {
+    id: Int!
+    user: User!
+    message: String!
+}

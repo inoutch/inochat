@@ -1,0 +1,8 @@
+{
+  "presets": [
+    "@babel/react",
+    "next/babel",
+    "@zeit/next-typescript/babel"
+  ],
+  "plugins": ["transform-decorators-legacy", "transform-class-properties"]
+}

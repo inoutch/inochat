@@ -1,0 +1,253 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChatForm Test shallow 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Provider
+    userStore={
+      UserStore {
+        "token": null,
+        "userId": 0,
+        "username": null,
+        Symbol(mobx did run lazy initializers): true,
+        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+          "defaultEnhancer": [Function],
+          "keysAtom": Atom$$1 {
+            "diffValue": 0,
+            "isBeingObserved": false,
+            "isPendingUnobservation": false,
+            "lastAccessedBy": 0,
+            "lowestObserverState": 2,
+            "name": "UserStore@3.keys",
+            "observers": Set {},
+          },
+          "name": "UserStore@3",
+          "target": [Circular],
+          "values": Map {
+            "token" => null,
+            "username" => null,
+            "userId" => 0,
+          },
+        },
+      }
+    }
+  >
+    <inject-ChatForm-with-userStore
+      chatRoom={
+        Object {
+          "chats": Array [
+            Object {
+              "message": "コメント1",
+              "user": Object {
+                "id": 1,
+                "username": "John",
+              },
+            },
+            Object {
+              "message": "コメント2",
+              "user": Object {
+                "id": 2,
+                "username": "Steve",
+              },
+            },
+          ],
+          "id": 1,
+          "name": "部屋名",
+          "user": Object {
+            "id": 1,
+            "username": "ユーザー名",
+          },
+        }
+      }
+      onRefresh={[Function]}
+    />
+  </Provider>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "chatRoom": Object {
+        "chats": Array [
+          Object {
+            "message": "コメント1",
+            "user": Object {
+              "id": 1,
+              "username": "John",
+            },
+          },
+          Object {
+            "message": "コメント2",
+            "user": Object {
+              "id": 2,
+              "username": "Steve",
+            },
+          },
+        ],
+        "id": 1,
+        "name": "部屋名",
+        "user": Object {
+          "id": 1,
+          "username": "ユーザー名",
+        },
+      },
+      "onRefresh": [Function],
+    },
+    "ref": null,
+    "rendered": null,
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "chatRoom": Object {
+          "chats": Array [
+            Object {
+              "message": "コメント1",
+              "user": Object {
+                "id": 1,
+                "username": "John",
+              },
+            },
+            Object {
+              "message": "コメント2",
+              "user": Object {
+                "id": 2,
+                "username": "Steve",
+              },
+            },
+          ],
+          "id": 1,
+          "name": "部屋名",
+          "user": Object {
+            "id": 1,
+            "username": "ユーザー名",
+          },
+        },
+        "onRefresh": [Function],
+      },
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`ChatForm Test snapshot 1`] = `
+<section
+  className="frame"
+>
+  <style
+    jsx={true}
+  >
+    
+            border: 1px solid grey;
+        
+  </style>
+  <h2>
+    <style
+      jsx={true}
+    >
+      
+            padding: 12px;
+            
+    </style>
+    部屋名
+  </h2>
+  <div>
+    <style
+      jsx={true}
+    >
+      
+            width: 100%;
+            border-bottom: 1px solid grey;
+        
+    </style>
+  </div>
+  <div>
+    <style
+      jsx={true}
+    >
+      
+            padding: 12px;
+            
+    </style>
+    <div>
+      チャット(
+      2
+      )
+    </div>
+    <div>
+      <style
+        jsx={true}
+      >
+        
+                            padding: 12px;
+                            
+      </style>
+      <div>
+        <label>
+          John
+        </label>
+        <p>
+          コメント1
+        </p>
+      </div>
+      <div>
+        <style
+          jsx={true}
+        >
+          
+            width: 100%;
+            border-bottom: 1px solid grey;
+        
+        </style>
+      </div>
+      <div>
+        <label>
+          Steve
+        </label>
+        <p>
+          コメント2
+        </p>
+      </div>
+    </div>
+    <form>
+      <label>
+        チャット内容を入力してください
+      </label>
+      <div />
+      <div>
+        <input
+          onChange={[Function]}
+          type="text"
+          value=""
+        />
+        <input
+          onClick={[Function]}
+          type="submit"
+        />
+      </div>
+    </form>
+  </div>
+</section>
+`;

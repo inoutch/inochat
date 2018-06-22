@@ -1,0 +1,6 @@
+type ChatRoom {
+    id: Int!
+    name: String!
+    user: User!
+    chats: [Chat]!
+}
